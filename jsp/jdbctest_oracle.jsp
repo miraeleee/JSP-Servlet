@@ -41,7 +41,6 @@
             .InfoTable tr td:first-child{
                 text-align: center;
             }
-
             </style>
         </head>
         <body>
@@ -55,8 +54,8 @@
                     <th>성별</th>
                     <th>나이</th>
                 </tr>
-                //jsp로직
                 <%
+                //jsp로직
                     try{
                     Class.forName("oracle.jdbc.driver.OracleDriver");
                     con=DriverManager.getConnection(uri, userid, userpw);
@@ -77,7 +76,7 @@
                    if(rs != null) rs.close();
                    if(stmt != null) stmt.close();
                    if(con != null) con.close();
-
+                   
                 }catch(Exception e){
                       e.printStackTrace();
                    }
