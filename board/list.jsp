@@ -111,7 +111,7 @@
             
                 <tr onMouseover="this.style.background='#46D2D2'"onMouseout="this.style.background='white'">
                     <td><%=rs.getInt("seqno")%></td>
-                    <td style="text-align: left;"><a href="/board/vies.jsp?seqno=<%=rs.getInt("seqno")%>" onmouseover="this.style.textDecoration='underline'"onmouseout="this.style.textDecoration='none'"><%=rs.getString("title")%></a></td>
+                    <td style="text-align: left;"><a href="/board/view.jsp?seqno=<%=rs.getInt("seqno")%>" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'"><%=rs.getString("title")%></a></td>
                     <td><%=rs.getString("writer")%></td>
                     <td><%=rs.getString("regdate")%></td>
                     <td><%=rs.getInt("hitno")%></td>

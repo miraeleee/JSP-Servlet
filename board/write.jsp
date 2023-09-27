@@ -103,7 +103,7 @@
                     content.focus();
                     return false;
                 }
-                document.WriteForm.action='/board/write';
+                document.WriteForm.action='/board/write'; //자바파일으로 이동
                 document.WriteForm.submit();
             }
         </script>
