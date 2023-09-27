@@ -1,5 +1,4 @@
-package com.test.servlet;
-
+package com.test.servlet; //class파일 위치
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -10,7 +9,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.annotation.WebServlet;
 
 @WebServlet("/servlet/hostinfo") //상대경로를 넣어줌
-public class HostInfo extends HttpServlet{
+public class HostInfo extends HttpServlet{ //추상클래스 HttpServlet으로부터 상속
     //외부라이브러리
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response)throws IOException{
